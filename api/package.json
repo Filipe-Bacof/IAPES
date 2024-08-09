@@ -1,0 +1,25 @@
+{
+  "name": "iapes",
+  "version": "1.0.0",
+  "description": "Instituto de Assistência e Pesquisa em Educação e Saúde Transtorno do Especto Autista",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "nodemon src/index.js",
+    "start": "node src/index.js"
+  },
+  "author": "Filipe Bacof",
+  "license": "ISC",
+  "dependencies": {
+    "@prisma/client": "^5.18.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "node-schedule": "^2.1.1",
+    "nodemailer": "^6.9.14",
+    "pg": "^8.12.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4",
+    "prisma": "^5.18.0"
+  }
+}
