@@ -56,7 +56,7 @@ export default function Header() {
         priority
       />
       <div className="flex flex-col items-center justify-center w-full md:w-10/12">
-        <h1 className="text-2xl font-semibold text-center">
+        <h1 className="text-2xl font-bold text-center text-blue-800 text-shadow-sm">
           IAPES - Compromisso com o Autismo
         </h1>
         <div className="flex flex-col md:flex-row w-full gap-2 border-b-4 border-blue-300 py-4">

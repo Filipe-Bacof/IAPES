@@ -8,10 +8,18 @@ datasource db {
 }
 
 model doadores {
-  id         Int      @id @default(autoincrement())
+  id         Int       @id @default(autoincrement())
   nome       String
-  email      String   @unique
+  email      String    @unique
   nascimento DateTime
-  infoiapes  Boolean  @default(false)
-  createdAt  DateTime @default(now())
+  infoiapes  Boolean   @default(false)
+  createdAt  DateTime  @default(now())
+  doacoes    doacoes[]
+}
+
+model doacoes {
+  id        Int       @id @default(autoincrement())
+  createdAt DateTime  @default(now())
+  doadorId  Int?
+  doador    doadores? @relation(fields: [doadorId], references: [id])
 }
